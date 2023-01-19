@@ -3,7 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import Dev from "./pages/Dev";
+import Login from "./pages/Login";
+import Profile from "./pages/Profile";
+import Prescriptions from "./pages/Prescriptions";
 import Nopage from "./pages/Nopage";
 
 function Main() {
@@ -11,8 +13,9 @@ function Main() {
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Layout />} >
-					<Route index element={<Home />} />
-					<Route path="dev" element={<Dev />} />
+					<Route path="login" element={<Login />} />
+					<Route path="profile" element={<Profile />} />
+					<Route path="prescriptions" element={<Prescriptions />} />
 					<Route path="*" element={<Nopage />} />
 				</Route>
 			</Routes>

@@ -4,8 +4,8 @@ class jsonSrv {
         data = JSON.stringify(data);
         return httpCommon.post(pageName, data);
     }
-    get(pageName, data = "") {
-        return httpCommon.get(pageName, data);
+    get(pageName) {
+        return httpCommon.get(pageName);
     }
 }
 export default new jsonSrv();
