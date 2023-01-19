@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "./node_modules/.bin/nodemon server.js"
+  },
+  "dependencies": {
+    "formidable": "^2.1.1",
+    "mv": "^2.1.1"
+  }
+}
